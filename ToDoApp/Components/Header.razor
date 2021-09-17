@@ -1,0 +1,36 @@
+@namespace ToDoApp
+
+<header class="header">
+    <div class="header__content content">
+        <div class="header__logo">ToDo App</div>
+        <nav class="header__nav nav">
+            <ul class="nav__nav">
+                <li class="nav__item">
+                    <a href="/" class="disabled">
+                        Мои дела
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="/archive">
+                        Архив
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__search search-bar">
+            <input class="search-bar__input"
+                   placeholder="Я ищу..."
+                   name="query"
+                   type="text" required />
+            <button class="search-bar__btn btn btn--search"
+                   type="submit">
+                Search
+            </button>
+        </div>
+        <!-- <button class="search-bar__btn
+                btn btn--search btn--search-round"
+                type="submit">
+            Search
+        </button> -->
+    </div>
+</header>

@@ -1,0 +1,77 @@
+@page "/"
+@namespace ToDoApp
+
+<h1 class="main__title">Мои дела</h1>
+
+<div class="main__todolist todolist">
+
+    <div class="todolist__item todoitem">
+        <div class="todoitem__header todoitem__header--odd">
+            <div class="todoitem__label">
+                <p class="todoitem__index">1.</p>
+                <p class="todoitem__title">Надо сделать</p>
+                <p class="todoitem__chip chip chip--created">09 Sep 21 12:22</p>
+            </div>
+            <div class="todoitem__toggler toggler"></div>
+        </div>
+    </div>
+
+    <div class="todolist__item todoitem">
+        <div class="todoitem__header todoitem__header--even">
+            <div class="todoitem__label">
+                <p class="todoitem__index">2.</p>
+                <p class="todoitem__title">Надо еще сделать</p>
+                <p class="todoitem__chip chip chip--created">09 Sep 21 12:22</p>
+            </div>
+            <div class="todoitem__toggler toggler"></div>
+        </div>
+    </div>
+
+    <div class="todolist__item todoitem">
+        <div class="todoitem__header todoitem__header--odd">
+            <div class="todoitem__label">
+                <p class="todoitem__index">3.</p>
+                <p class="todoitem__title">Делаю</p>
+                <p class="todoitem__chip chip chip--created">09 Sep 21 12:22</p>
+            </div>
+            <div class="todoitem__toggler toggler toggler--opened"></div>
+        </div>
+        <pre class="todoitem__content">Надо подготовиться...
+Не забыть...
+            <span class="todoitem__buttons">
+                <button class="btn btn--text" type="submit">Изменить</button>
+                <button class="btn btn--text" type="submit">Завершить</button>
+            </span>
+        </pre>
+    </div>
+
+    <div class="todolist__item todoitem">
+        <div class="todoitem__header todoitem__header--even">
+            <div class="todoitem__label">
+                <p class="todoitem__index">4.</p>
+                <p class="todoitem__title">Сделай уже!</p>
+                <p class="todoitem__chip chip chip--archived">09 Sep 21 12:22</p>
+            </div>
+            <div class="todoitem__toggler toggler"></div>
+        </div>
+    </div>
+
+    <div class="todolist__item todoitem--add-new">
+        <div class="todoitem__header todoitem__header--add">
+            <!-- <div class="todoitem__label">
+                <p class=" todoitem__title">Добавить</p>
+            </div> -->
+            <input placeholder="Заголовок" type="text" class="todoitem__title todoitem__input input" />
+            <div class="todoitem__toggler toggler toggler--opened">
+            </div>
+        </div>
+        <div class="todolist__form">
+            <textarea placeholder="Описание" type="text" class="todoitem__textarea textarea">
+        </textarea>
+            <button class="btn btn--primary">
+                Добавить
+            </button>
+        </div>
+    </div>
+
+</div>
