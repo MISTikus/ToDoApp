@@ -1,19 +1,26 @@
 @namespace ToDoApp
+@inherits ItemCardBase
 
 <div class="todolist__item todoitem--add-new">
     <div class="todoitem__header todoitem__header--add">
         <!-- <div class="todoitem__label">
             <p class=" todoitem__title">Добавить</p>
         </div> -->
-        <input placeholder="Заголовок" type="text" class="todoitem__title todoitem__input input" />
+        <input placeholder="Заголовок" type="text"
+            class="todoitem__title todoitem__input input" />
         <div class="todoitem__toggler toggler toggler--opened">
         </div>
     </div>
     <div class="todolist__form">
-        <textarea placeholder="Описание" type="text" class="todoitem__textarea textarea">
-    </textarea>
+        <textarea placeholder="Описание"
+                  class="todoitem__textarea textarea">
+        </textarea>
         <button class="btn btn--primary">
             Добавить
         </button>
     </div>
 </div>
+
+@code {
+    [Parameter] public EventCallback<ToDoItem> Save { get; set; }
+}
