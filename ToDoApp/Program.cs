@@ -13,7 +13,8 @@ namespace ToDoApp {
             builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 
             // ADD YOUR SERVICES HERE
-
+            builder.Services.AddScoped<LocalStorageService>();
+            builder.Services.AddScoped<InteropService>();
             // ADD YOUR SERVICES HERE
 
             await builder.Build().RunAsync();
